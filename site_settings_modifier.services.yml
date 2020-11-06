@@ -1,0 +1,5 @@
+services:
+  site_settings_modifier.override_site_info_form:
+    class: Drupal\site_settings_modifier\Routing\RouteSubscriber
+    tags:
+    - { name: event_subscriber }

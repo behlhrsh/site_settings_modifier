@@ -1,0 +1,5 @@
+name: 'Site Settings Modifier'
+type: module
+description: 'This module is used to override the site information.'
+core: 8.x
+package: 'Custom'

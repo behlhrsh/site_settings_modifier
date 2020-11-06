@@ -1,0 +1,7 @@
+site_settings_modifier.json_response_controller_get:
+  path: '/page_json/{api}/{node_id}'
+  defaults:
+    _controller: '\Drupal\site_settings_modifier\Controller\JsonResponseController::get'
+    _title: 'Get Node Title as Json Output'
+  requirements:
+    _permission: 'access content'

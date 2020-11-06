@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains site_settings_modifier.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function site_settings_modifier_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the site_settings_modifier module.
+    case 'help.page.site_settings_modifier':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module is used to override the site information.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
