@@ -45,7 +45,7 @@ class JsonResponseController extends ControllerBase {
    *   The node id to load & return as an array.
    *
    * @return string
-   *   Return Hello string.
+   *   Return Node array as json.
    */
   public function get($api, $node_id) {
     if ($api != $this->configFactory->get('system.site')->get('siteapikey') || empty($node_id)) {
